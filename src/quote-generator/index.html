@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <script type="module" src="index.css"></script>
+    <script type="module" src="fontawesome.css"></script>
+
+    <title>Quote Generator</title>
+  </head>
+
+  <body>
+    <div
+      class="w-auto max-w-[900px] py-[20px] px-[30px] rounded-[10px] bg-white/60 shadow-[0_10px_10px_10px_rgba(0,0,0,0.2)] max-lg:my-auto max-lg:mx-[10px]"
+      id="quote-container"
+    >
+      <!-- Quote -->
+      <div class="text-[2.75rem] max-lg:text-[2rem]">
+        <i class="fa-solid fa-quote-left before:text-[4rem]"> </i>
+        <span id="quote-content"></span>
+      </div>
+      <!-- Author -->
+      <div class="mt-[15px] text-[2rem] font-normal italic">
+        <span id="quote-author"></span>
+      </div>
+      <!-- Buttons -->
+      <div class="mt-[15px] flex justify-between">
+        <button class="hover:text-[#38a1f3]" id="twitter-btn" title="Tweet This!">
+          <i class="fa-brands fa-twitter"></i>
+        </button>
+        <button id="new-quote-btn">New Quote</button>
+      </div>
+    </div>
+
+    <div
+      class="border-solid border-[16px] border-[#f3f3f3] border-t-[16px] border-t-[#333] rounded-[50%] size-[120px] animate-spin"
+      id="loader"
+    ></div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

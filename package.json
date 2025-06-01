@@ -1,0 +1,23 @@
+{
+  "name": "javascript-projects",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@tailwindcss/vite": "^4.1.8",
+    "@types/node": "^22.15.29",
+    "install": "^0.13.0",
+    "tailwindcss": "^4.1.8",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5"
+  },
+  "trustedDependencies": [
+    "@tailwindcss/oxide"
+  ]
+}

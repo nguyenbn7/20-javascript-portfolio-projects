@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+@import "tailwindcss";
+
+@layer base {
+  html {
+    @apply box-border;
+  }
+
+  body {
+    font-family: Montserrat, sans-serif;
+    @apply min-h-screen text-black/90 font-semibold flex items-center justify-center bg-gradient-to-r from-[#c9d6ff] to-[#e2e2e2];
+  }
+
+  button {
+    @apply text-[1.2rem] h-[2.5rem] rounded-[10px] text-white bg-[#333] py-[.5rem] px-[1.8rem] shadow-[0_0.3rem_rgba(121,_121,_121,_0.65)] hover:brightness-110 active:shadow-[0_0.1rem_rgba(255,_255,_255,_0.65)] active:translate-x-[0] active:translate-y-[.3rem];
+  }
+}
