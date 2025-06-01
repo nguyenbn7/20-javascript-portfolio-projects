@@ -2,6 +2,7 @@
 name: Deploy static content to Pages
 env:
   VITE_GITHUB_PAGE_URL: ${{ secrets.VITE_GITHUB_PAGE_URL }}
+  VITE_UNPLASH_API_KEY: ${{ secrets.VITE_UNPLASH_API_KEY }}
 
 on:
   # Runs on pushes targeting the default branch

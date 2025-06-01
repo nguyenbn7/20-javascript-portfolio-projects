@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" class="box-border bg-[linear-gradient(to_right,_#fc5c7d,_#6a82fb)]">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+  <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+
+  <script type="module" src="index.css"></script>
+  <script type="module" src="fontawesome.css"></script>
+  <title>Music Player</title>
+</head>
+
+<body
+  class="min-h-screen flex justify-center items-center font-['League_Spartan', sans-serif] text-[12px] max-sm:w-[95vw]">
+  <div class="h-[500px] w-[400px] bg-[#e7e7e7] rounded-[20px] shadow-[0_15px_30px_5px_rgba(0,0,0,0.3)]">
+    <div class="size-[300px] relative -top-[50px] left-[50px] max-sm:left-[29px]">
+      <img alt="Album Art" class="size-full object-cover rounded-[20px] shadow-[0_5px_30px_5px_rgba(0,0,0,0.3)]"
+        id="song-image" />
+    </div>
+    <h2 class="font-bold text-[25px] text-center max-sm:text-[20px]" id="song-name"></h2>
+    <h3 class="text-[20px] text-center font-normal mt-[5px] max-sm:text-[15px]" id="song-artist"></h3>
+    <audio id="player" class="hidden"></audio>
+    <div class="relative -top-3 bg-white rounded-[5px] cursor-pointer my-[40px] mx-[20px] h-[4px] w-[90%]"
+      id="progress-container">
+      <div class="bg-[#242323] rounded-[5px] h-full w-0 transition-[width] ease-linear duration-100" id="progress">
+      </div>
+      <div class="relative -top-6 flex justify-between">
+        <span id="current-time"></span>
+        <span id="duration"></span>
+      </div>
+    </div>
+    <div class="relative -top-10 left-[120px] w-[200px] max-sm:-top-[10px] max-sm:left-[100px]">
+      <button class="text-[30px] text-[rgb(129,129,129)] mr-[30px] select-none hover:brightness-[.8]" id="prev"
+        title="Previous">
+        <i class="fa-solid fa-backward"></i>
+      </button>
+      <button class="relative top-[3px] text-[40px] text-[rgb(129,129,129)] mr-[30px] select-none hover:brightness-[.8]"
+        id="main"></button>
+      <button class="text-[30px] text-[rgb(129,129,129)] mr-[30px] select-none hover:brightness-[.8]" id="next"
+        title="Next">
+        <i class="fa-solid fa-forward"></i>
+      </button>
+    </div>
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>

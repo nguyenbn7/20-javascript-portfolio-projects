@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" class="box-border">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+  <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+
+  <script type="module" src="index.css"></script>
+  <title>Infinity Scroll</title>
+</head>
+
+<body class="min-h-screen font-['Bebas Neue',_sans-serif] bg-gradient-to-r from-[#c9d6ff] to-[#e2e2e2]">
+  <!-- Title -->
+  <h1 class="text-center mt-[25px] mb-[15px] text-[40px] tracking-[5px] max-sm:text-[20px]">
+    Unsplash API - Infinite Scroll
+  </h1>
+
+  <!-- Loader -->
+  <div class="fixed top-0 bottom-0 left-0 right-0 bg-white/80 items-center justify-center hidden" id="loader">
+    <img alt="Loading" id="loader-image" />
+  </div>
+
+  <!-- Image container -->
+  <div class="my-[10px] mx-[30%] max-sm:m-[10px]" id="image-container"></div>
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>

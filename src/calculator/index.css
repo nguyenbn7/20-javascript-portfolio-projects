@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@layer base {
+  button {
+    @apply min-h-[50px] text-[20px] font-[450] rounded-[5px] bg-[rgb(192,191,191)];
+  }
+
+  button:hover {
+    @apply brightness-110;
+  }
+
+  button:active {
+    @apply translate-y-[1px];
+  }
+}
+
+@layer utilities {
+  #display::-webkit-scrollbar {
+    @apply w-[10px];
+  }
+
+  #display::-webkit-scrollbar-track {
+    @apply bg-[#f1f1f1];
+  }
+
+  #display::-webkit-scrollbar-thumb {
+    @apply bg-[#888];
+  }
+
+  #display::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#555];
+  }
+}

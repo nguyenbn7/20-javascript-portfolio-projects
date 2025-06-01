@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: rgb(var(--primary-color));
+  --color-success: rgb(var(--primary-success));
+  --color-danger: rgb(var(--primary-danger));
+}
+
+@layer base {
+  :root {
+    --primary-color: 30 144 255; /** dodgerblue */
+    --success: 15 158 2;
+    --danger: 214 23 23;
+  }
+
+  body {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23161616' fill-opacity='0.1'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  #item-container::-webkit-scrollbar {
+    @apply hidden;
+  }
+}
+
+@layer utilities {
+  .item {
+    @apply flex items-baseline justify-between h-[80px] mx-[50px] select-none;
+  }
+
+  .selected-item {
+    @apply bg-primary fixed top-[50%] -z-[1] w-[52%] h-[80px] max-sm:w-[95%] max-lg:w-[70%] xl:w-[40%];
+  }
+
+  .radio-container {
+    @apply w-[90%] h-[75px] mt-[25px] cursor-pointer border-[2px] border-solid border-black rounded-[5px] mx-auto [@media(max-height:640px)]:first:mt-0;
+  }
+
+  .radio-container > label {
+    @apply relative top-[20px] left-[20px] text-3xl max-sm:text-2xl;
+  }
+
+  .radio-container > input[type="radio"] {
+    @apply opacity-0 w-full h-[75px] relative -top-10 cursor-pointer z-[2];
+  }
+
+  .radio-container > span {
+    @apply relative -top-28 flex flex-col justify-center text-center text-lg max-w-fit max-sm:text-base left-[75%] max-sm:-top-[6.5rem];
+  }
+
+  .radio-container > span > .best-score-value {
+    @apply text-2xl max-sm:text-xl;
+  }
+}

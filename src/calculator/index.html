@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" class="box-border">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+  <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+
+  <script type="module" src="index.css"></script>
+  <title>Calculator</title>
+</head>
+
+<body class="min-h-screen bg-gradient-to-r from-[#373b44] to-[#4286f4] flex flex-col justify-center items-center">
+  <div class="bg-white w-[400px] rounded-[12px] shadow-[0_5px_30px_-5px_rgba(0,0,0,0.6)] max-md:w-[95%]">
+    <div class="bg-black text-white flex items-center justify-end rounded-[10px_10px_0_0]">
+      <h1 class="p-[25px] text-[45px] font-['Lucida_Console',_sans-serif] font-thin overflow-x-auto" id="display">
+        0
+      </h1>
+    </div>
+
+    <div class="grid grid-cols-4 gap-[10px] p-[10px]">
+      <button class="bg-[grey] text-white text-[30px] operator-btns" value="+">+</button>
+      <button class="bg-[grey] text-white text-[30px] operator-btns" value="-">-</button>
+      <button class="bg-[grey] text-white text-[30px] operator-btns" value="*">×</button>
+      <button class="bg-[grey] text-white text-[30px] operator-btns" value="/">÷</button>
+      <button value="7" class="number-btns">7</button>
+      <button value="8" class="number-btns">8</button>
+      <button value="9" class="number-btns">9</button>
+      <button value="4" class="number-btns">4</button>
+      <button value="5" class="number-btns">5</button>
+      <button value="6" class="number-btns">6</button>
+      <button value="1" class="number-btns">1</button>
+      <button value="2" class="number-btns">2</button>
+      <button value="3" class="number-btns">3</button>
+      <button class="decimal" value="." id="decimal-btn">.</button>
+      <button value="0" class="number-btns">0</button>
+      <button class="bg-[rgb(224,69,69)] text-white hover:brightness-90" value="C" id="clear-btn">C</button>
+      <button class="col-[-2] row-[2_/span_4] bg-[rgb(13,206,87)] operator-btns" value="=">=</button>
+    </div>
+  </div>
+
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>

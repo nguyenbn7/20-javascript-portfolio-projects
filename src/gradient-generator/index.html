@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+  <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+
+  <script type="module" src="index.css"></script>
+  <title>Gradient Generator</title>
+</head>
+
+<body class="font-['Raleway',sans-serif] text-black/50 text-center top-[15%] tracking-[.25em] h-screen">
+  <h1 class="font-bold text-5xl uppercase w-full my-7">Gradient Generator</h1>
+
+  <div class="flex items-center justify-center text-base font-semibold tracking-normal">
+    <select class="py-[.375rem] pr-9 pl-3" name="direction" id="direction">
+      <option value="right" selected>right</option>
+      <option value="left">left</option>
+      <option value="top">top</option>
+      <option value="bottom">bottom</option>
+    </select>
+    <input class="mx-2 my-3" type="color" name="color1" id="color1" />
+    <input class="mx-2 my-3" type="color" name="color2" id="color2" />
+  </div>
+
+  <h2 class="text-xl font-semibold my-3">Current CSS Background</h2>
+
+  <h3 class="font-extrabold text-base tracking-[.01em]" id="display-css-text"></h3>
+
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
